@@ -37,3 +37,22 @@ body {
           text-decoration: none; }
       .head .lista li :hover .sub_lista {
         display: block; }
+
+.art_a {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 2fr; }
+  .art_a .box_a_1 {
+    display: grid;
+    grid-area: 2fr; }
+    .art_a .box_a_1 img {
+      display: flex; }
+    .art_a .box_a_1 .sub_box_a_1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 20px; }
+      .art_a .box_a_1 .sub_box_a_1 p {
+        text-align: justify;
+        font-size: 1em;
+        font-family: Georgia, 'Times New Roman', Times, serif; }
