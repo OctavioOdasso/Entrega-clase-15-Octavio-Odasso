@@ -8,35 +8,35 @@ body {
 .head {
   background-color: azure;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: .5fr 1fr .5fr;
   grid-template-columns: 1fr; }
   .head .logo {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    grid-area: 1fr;
+    grid-area: .5fr;
     position: relative; }
   .head .titulo {
     grid-area: 1fr;
-    margin-top: 4em;
     font-size: 1.5em;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif; }
   .head .lista {
-    grid-area: 1fr;
-    margin-top: 0; }
+    grid-area: .5fr;
+    padding-top: .4em; }
     .head .lista li {
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 1em;
       text-align: center;
       display: block; }
+      .head .lista li a {
+        text-decoration: none;
+        color: black; }
       .head .lista li .sub_lista {
         display: none; }
         .head .lista li .sub_lista a {
           color: black;
           text-decoration: none; }
-      .head .lista li :hover .sub_lista {
-        display: block; }
 
 .art_a {
   display: grid;
@@ -46,13 +46,21 @@ body {
     display: grid;
     grid-area: 2fr; }
     .art_a .box_a_1 img {
-      display: flex; }
-    .art_a .box_a_1 .sub_box_a_1 {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto; }
+    .art_a .box_a_1 .sub_box_a_1, .art_a .box_a_1 .box_a_2 .box_b_1, .art_a .box_a_2 .box_a_1 .box_b_1 {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
       margin-top: 20px; }
-      .art_a .box_a_1 .sub_box_a_1 p {
+      .art_a .box_a_1 .sub_box_a_1 h2, .art_a .box_a_1 .box_a_2 .box_b_1 h2, .art_a .box_a_2 .box_a_1 .box_b_1 h2 {
+        text-align: center;
+        font-size: 30px; }
+      .art_a .box_a_1 .sub_box_a_1 p, .art_a .box_a_1 .box_a_2 .box_b_1 p, .art_a .box_a_2 .box_a_1 .box_b_1 p {
         text-align: justify;
-        font-size: 1em;
+        font-size: 22px;
         font-family: Georgia, 'Times New Roman', Times, serif; }
+  .art_a .box_a_2 {
+    display: grid;
+    grid-area: 2fr; }

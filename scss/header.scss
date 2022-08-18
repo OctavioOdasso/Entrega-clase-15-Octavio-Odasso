@@ -12,30 +12,33 @@ body {
 .head {
     background-color: $color_principal;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr .5fr;
     grid-template-columns: 1fr;
     .logo {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        grid-area: 1fr;
+        grid-area: .5fr;
         position: relative;
     }
     .titulo {
         grid-area: 1fr;
-        margin-top: 4em;
         font-size: 1.5em;
         text-align: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
     .lista {
-        grid-area: 1fr;
-        margin-top: 0;
+        grid-area: .5fr;
+        padding-top: .4em;
         li {
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 1em;
             text-align: center;
             display: block;
+            a {
+                text-decoration: none;
+                color: black;
+            }
             .sub_lista {
                 display: none;    
                 a {
@@ -43,39 +46,6 @@ body {
                     text-decoration: none;
                 }
             }
-            :hover .sub_lista {
-                display: block;
-            }
         }
-    }
-}
-
-.art_a {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr;
-    .box_a_1 {
-        display: grid;
-        grid-area: 2fr;
-        img {
-            display: flex;
-            }
-        .sub_box_a_1 {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            margin-top: 20px;
-            h2 {
-                
-            }
-            p {
-                text-align: justify;
-                font-size: 1em;
-                font-family: Georgia, 'Times New Roman', Times, serif;
-            }
-        }    
-    }
-    .box_a_2 {
-
     }
 }

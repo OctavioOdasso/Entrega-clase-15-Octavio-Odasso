@@ -1,0 +1,40 @@
+@mixin base {
+    display: grid;
+    grid-area: 2fr;
+}
+
+
+.art_a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    .box_a_1 {
+        @include base;
+        img {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        .sub_box_a_1 {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-top: 20px;
+            h2 {
+                text-align: center;
+                font-size: 30px;
+            }
+            p {
+                text-align: justify;
+                font-size: 22px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        }    
+    }
+    .box_a_2 {
+        @include base;
+        .box_b_1 {
+            @extend .sub_box_a_1;
+        }
+    }
+}
