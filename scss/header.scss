@@ -49,3 +49,20 @@ body {
         }
     }
 }
+
+@media screen and (min-width:1024) {
+    .head {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        .logo {
+            grid-template-columns: 1fr;
+        }
+        .titulo {
+            grid-template-columns: 1fr;
+        }
+        .lista {
+            grid-template-columns: 1fr;
+        }
+    }
+}
