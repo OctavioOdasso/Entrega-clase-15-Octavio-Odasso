@@ -1,7 +1,7 @@
 #foot {
     display: grid;
     grid-template-rows: 1fr 1fr;
-
+    border: 1px solid black;
     .foot1 {
         grid-template-rows: 1fr;
         display: block;
